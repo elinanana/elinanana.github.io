@@ -2,6 +2,16 @@ import { nameQuery, auditsDoneQuery, auditsReceivedQuery, gameQuery } from "./qu
 import { getId } from "./jwt.js";
 import { drawGraph } from "./graphs.js";
 
+checkAuthentication()
+
+// Check if JWT cookie is present
+function checkAuthentication() {
+  const jwtCookie = document.cookie.split(';').find(cookie => cookie.trim().startsWith('jwt='));
+  if (!jwtCookie) {
+    window.location.href = '/'; 
+  }
+}
+
 const jwt = document.cookie.split('; ').find(row => row.startsWith('jwt')).split('=')[1];
 const userId = getId()
 const endpoint = 'https://01.kood.tech/api/graphql-engine/v1/graphql'
