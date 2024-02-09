@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li><a href="#" id="logout">Log out</a></li>
+        </ul>
+    </header>
+
+    <div class="main-container">
+        <div class="main">
+            <div class="box-container">
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic">Name</h2>
+                        <h2 class="topic-heading" id="userInfo"></h2>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                </div>
+
+                <div class="box box2">
+                    <div class="text">
+                        <h2 class="topic">Audits done</h2>
+                        <h2 class="topic-heading" id="auditsDone"></h2>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-check-circle-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                    </svg>
+                </div>
+
+                <div class="box box3">
+                    <div class="text">
+                        <h2 class="topic">Audits received</h2>
+                        <h2 class="topic-heading" id="auditsReceived"></h2>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-collection-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="report-container">
+                    <div class="report-header">
+                        <h1 class="recent-Articles">zzle game</h1>
+                    </div>
+                    <div class="report-body">
+                        <svg width="800" height="300" id="zzle">
+                            <line x1="30" x2="720" y1="260" y2="260" stroke="white" />
+                            <line x1="30" x2="30" y1="40" y2="260" stroke="white" />
+                            <text x="730" y="280" fill="white">Level</text>
+                            <text x="10" y="20" fill="white">Attempts</text>
+                            <div id="tooltip"></div>
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="report-container">
+                    <div class="report-header">
+                        <h1 class="recent-Articles">memory game</h1>
+                    </div>
+                    <div class="report-body">
+                        <svg width="800" height="300" id="memory">
+                            <line x1="30" x2="720" y1="260" y2="260" stroke="white" />
+                            <line x1="30" x2="30" y1="40" y2="260" stroke="white" />
+                            <text x="730" y="280" fill="white">Level</text>
+                            <text x="10" y="20" fill="white">Attempts</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/graphql.js" type="module"></script>
+    <script src="/static/js/graphs.js" type="module"></script>
+
+</body>
+
+</html>
