@@ -11,13 +11,11 @@
 
 New version of kood/Johvi dashboard that shows stats and achievements of your journey so far
 
-<br>
-<br>
 
 <a href="usage"></a>
 ## Usage
 
-Open 
+Open [https://elinanana.github.io/](https://elinanana.github.io/)
   
 Or run the app on local machine:
 
@@ -30,7 +28,6 @@ node server.cjs
 ```
 
 - Open [http://localhost:8080/](http://localhost:8080/) in browser
-<br>
 <br>
 
 <a href="audit"></a>
@@ -48,8 +45,6 @@ See [audit questions](https://github.com/01-edu/public/tree/master/subjects/grap
 - Hosting
 - JWT
 
-<br>
-<br>
 
 <a href="authors"></a>
 ## Authors
