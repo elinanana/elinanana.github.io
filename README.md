@@ -28,7 +28,6 @@ node server.cjs
 ```
 
 - Open [http://localhost:8080/](http://localhost:8080/) in browser
-<br>
 
 <a href="audit"></a>
 ## Audit
